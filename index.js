@@ -40,3 +40,22 @@ function isIsogram(str){
 }
 
 console.log(isIsogram("Occurrence"))
+
+
+// Q. Highest and Lowest | Kata 7
+
+// Steps
+// Convert string of numbers to an array of integers
+// Use JS Math functions to get highest and lowest integers
+// Return result with template literal
+
+function highAndLow(numbers){
+  // ...
+  let numArray = numbers.split(" ").map(val => parseInt(val))
+  
+  let highest = Math.max(...numArray);
+  let lowest = Math.min(...numArray);
+  
+  return `${highest} ${lowest}`
+}
+
