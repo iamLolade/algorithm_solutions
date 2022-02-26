@@ -59,3 +59,26 @@ function highAndLow(numbers){
   return `${highest} ${lowest}`
 }
 
+// Q Find the stray number | Kata 7
+
+// Steps 
+// Create object to keep track of occurrences
+// Loop through to return key(number) with 1 occurrence
+
+function stray(numbers) {
+  let data = {};
+  
+  for(let i = 0; i < numbers.length; i++) {
+    let num = numbers[i]
+    if(data[num]) {
+      data[num]++
+    } else {
+      data[num] = 1;
+    }
+  }
+  
+  for(let num in data) {
+    if(data[num] == 1) return parseInt(num)
+  }
+}
+
