@@ -1,5 +1,6 @@
 // Codewars algorithm solutions
 
+
 // Q. List Filtering | Kata 7
 // Return a new array with the strings filtered out
 const filter_list = (array) => {
@@ -81,4 +82,23 @@ function stray(numbers) {
     if(data[num] == 1) return parseInt(num)
   }
 }
+
+// Q Categorize New Number | Kata 7
+
+// Steps
+// Create a empty array for result
+// Loop through data
+// Ternary to check condition
+
+function openOrSenior(data){
+  // ...
+  let result = []
+  for(let i = 0; i < data.length; i++) {
+    let subArray = data[i]
+    subArray[0] < 55 || subArray[1] < 8 ? result.push("Open") : result.push("Senior")
+  }
+  return result;
+}
+
+
 
