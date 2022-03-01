@@ -100,5 +100,13 @@ function openOrSenior(data){
   return result;
 }
 
+//Q String ends with? | Kata 7
+
+function solution(str, ending){
+  // Use string method .endsWith()
+  return str.endsWith(ending)
+}
+
+
 
 
