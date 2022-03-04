@@ -133,5 +133,25 @@ function shorter_reverse_longer(a,b){
 }
 
 
+// Q Fix string case | Kata 7
+// Declare and initialize variables with empty arrays
+// Loop string, and push caps / lower case characters to respective arrays
+// Write condition to compare lengths
+
+function solve(s){
+  //..
+let caps = [];
+let low = [];
+
+for(let i = 0; i < s.length; i++) {
+  let char = s[i]
+  if(char === char.toUpperCase()) {
+    caps.push(char)
+  } else {
+    low.push(char)
+  }
+}
+return caps.length > low.length ? s.toUpperCase() : s.toLowerCase();
+}
 
 
