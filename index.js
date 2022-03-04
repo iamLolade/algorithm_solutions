@@ -107,6 +107,31 @@ function solution(str, ending){
   return str.endsWith(ending)
 }
 
+// Q shorter concat [reverse longer]
+
+// Steps
+// Declare and initialize variable with string lengths
+// Write condition to compare string lengths
+// Convert longest string to array, reverse, and covert back to string
+// Return result in required format
+
+function shorter_reverse_longer(a,b){
+  let firstSize = a.length;
+  let secondSize = b.length;
+  
+  if(firstSize > secondSize || firstSize === secondSize) {
+    
+    let reverse = a.split("").reverse().join("");
+    return `${b}${reverse}${b}` 
+    
+  } else  {
+    
+      let reverse = b.split("").reverse().join("");
+      return `${a}${reverse}${a}`
+      
+    }
+}
+
 
 
 
