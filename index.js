@@ -154,4 +154,25 @@ for(let i = 0; i < s.length; i++) {
 return caps.length > low.length ? s.toUpperCase() : s.toLowerCase();
 }
 
+// Q sPoNgEbOb MeMe | Kata 7
+// Declare and initialize variable with empty String
+// Loop through sentence
+// Write condition to capitalize character in even positions
+
+function spongeMeme(sentence) {
+  let result = "";
+  
+  for(let i = 0; i < sentence.length; i++) {
+     let char = sentence[i];
+    
+     if(i % 2 === 0) {
+       result += char.toUpperCase();
+     } else {
+       result += char.toLowerCase()
+     }
+  }
+  
+  return result
+}
+
 
