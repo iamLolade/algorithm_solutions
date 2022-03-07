@@ -16,7 +16,7 @@ console.log(filter_list([1,2,'a','b']));
 
 // Q. Isograms | Kata 7
 
-// Steps
+// STEPS
 // Create empty object to keep track of character occurrence
 // Convert word to lowercase
 // Loop through word
@@ -45,7 +45,7 @@ console.log(isIsogram("Occurrence"))
 
 // Q. Highest and Lowest | Kata 7
 
-// Steps
+// STEPS
 // Convert string of numbers to an array of integers
 // Use JS Math functions to get highest and lowest integers
 // Return result with template literal
@@ -62,7 +62,7 @@ function highAndLow(numbers){
 
 // Q Find the stray number | Kata 7
 
-// Steps 
+// STEPS 
 // Create object to keep track of occurrences
 // Loop through to return key(number) with 1 occurrence
 
@@ -85,7 +85,7 @@ function stray(numbers) {
 
 // Q Categorize New Number | Kata 7
 
-// Steps
+// STEPS
 // Create a empty array for result
 // Loop through data
 // Ternary to check condition
@@ -109,7 +109,7 @@ function solution(str, ending){
 
 // Q shorter concat [reverse longer]
 
-// Steps
+// STEPS
 // Declare and initialize variable with string lengths
 // Write condition to compare string lengths
 // Convert longest string to array, reverse, and covert back to string
@@ -134,6 +134,8 @@ function shorter_reverse_longer(a,b){
 
 
 // Q Fix string case | Kata 7
+
+// STEPS
 // Declare and initialize variables with empty arrays
 // Loop string, and push caps / lower case characters to respective arrays
 // Write condition to compare lengths
@@ -155,6 +157,8 @@ return caps.length > low.length ? s.toUpperCase() : s.toLowerCase();
 }
 
 // Q sPoNgEbOb MeMe | Kata 7
+
+// STEPS
 // Declare and initialize variable with empty String
 // Loop through sentence
 // Write condition to capitalize character in even positions
@@ -176,3 +180,21 @@ function spongeMeme(sentence) {
 }
 
 
+// Q Guess the Sequence | Kata 7
+
+// STEPS
+// Declare and initialize variable with empty array
+// Use while loop to populate array
+// Use sort method on array without callback function
+// return array
+
+function sequence(x) {
+  // Do
+  let result = []
+  let i = 1;
+  while(i <= x) {
+    result.push(i);
+    i++
+  }
+  return result.sort()
+}
