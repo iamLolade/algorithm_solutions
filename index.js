@@ -198,3 +198,17 @@ function sequence(x) {
   }
   return result.sort()
 }
+
+// Q Square Every Digit | Kata 7
+
+// STEPS
+// Convert number to string
+// Split string to array of digits
+// Reduce array to string, and square each digit in the process
+// Convert string to number
+
+function squareDigits(num){
+  return +String(num).split('').reduce((squaredDigit, digit) => {
+    return squaredDigit + Math.pow(digit, 2)
+  }, '')
+}
